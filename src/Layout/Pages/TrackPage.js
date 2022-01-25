@@ -1,5 +1,4 @@
 import React from "react";
-import {Image} from "react-bootstrap";
 import CoverPages from "../Component/CoverPages";
 import TracksItems from "../Component/Block/TracksItems";
 import TrackItems from "../Component/TrackItems";

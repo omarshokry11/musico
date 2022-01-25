@@ -13,6 +13,10 @@
     }
     .item-buttons
     {
+        @media (max-width: 768px) {
+            padding: 10px 0;
+            border-top: 1px solid rgba(0, 0, 0, .1);
+        }
         button{
             margin: 10px;
             border: none;
@@ -23,6 +27,9 @@
             color: $mainColor;
             font-size: 14px;
             font-weight: 400;
+            @media (max-width: 768px) {
+                padding: 10px 10px;
+            }
         }
         .bg-color-primary{
             background-color: #ff5e13;
@@ -140,12 +147,21 @@
         }
         .extra-large{
             padding: 15px 40px;
+            @media (max-width: 700px) {
+                padding: 15px 30px;
+            }
         }
         .large{
             padding: 12px 40px;
+            @media (max-width: 700px) {
+                padding: 10px 30px;
+            }
         }
         .default{
             padding: 8px 30px;
+            @media (max-width: 700px) {
+                padding: 8px 20px;
+            }
         }
         .medium{
             padding: 5px 30px;

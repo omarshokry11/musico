@@ -64,6 +64,7 @@
                 transition: all .4s;
                 @media (max-width: 768px) {
                     margin-bottom: 25px;
+                    width: 40%;
                 }
                 &:hover{
                     color: $secondColor;
