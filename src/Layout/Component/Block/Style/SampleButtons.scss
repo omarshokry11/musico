@@ -1,0 +1,157 @@
+@import "../../../../Style/__variable.scss";
+
+.main-sample-buttons-container
+{
+    padding: 50px 0;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    h2{
+        font-size: 22px;
+        font-weight: 400;
+        margin-bottom: 30px;
+        line-height: 1.2em;
+    }
+    .item-buttons
+    {
+        button{
+            margin: 10px;
+            border: none;
+            background: none;
+            display: inline-block;
+            padding: 10px 30px;
+            border-radius: 5px;
+            color: $mainColor;
+            font-size: 14px;
+            font-weight: 400;
+        }
+        .bg-color-primary{
+            background-color: #ff5e13;
+            border: 1px solid #ff5e13;
+            transition: all .4s;
+            color: $secondColor;
+            &:hover{
+                background-color: $secondColor;
+                color: #ff5e13;
+            }
+        }
+        .none-bg-primary{
+            border: 1px solid #ff5e13;
+            color: #ff5e13;
+            transition: all .4s;
+            &:hover{
+                background-color: #ff5e13;
+                color: $secondColor;
+            }
+        }
+        .bg-color-success{
+            border: 1px solid #4cd3e3;
+            background-color: #4cd3e3;
+            color: $secondColor;
+            transition: all .4s;
+            &:hover{
+                background-color: $secondColor;
+                color: #4cd3e3;
+            }
+        }
+        .none-bg-success{
+            border: 1px solid #4cd3e3;
+            background-color: $secondColor;
+            color: #4cd3e3;
+            transition: all .4s;
+            &:hover{
+                background-color: #4cd3e3;
+                color: $secondColor;
+            }
+        }
+        .bg-color-info{
+            border: 1px solid #38a4ff;
+            color: $secondColor;
+            background-color: #38a4ff;
+            transition: all .4s;
+            &:hover{
+                background-color: $secondColor;
+                color: #38a4ff;
+            }
+        }
+        .none-bg-info{
+            border: 1px solid #38a4ff;
+            color: #38a4ff;
+            background-color: $secondColor;
+            transition: all .4s;
+            &:hover{
+                background-color: #38a4ff;
+                color: $secondColor;
+            }
+        }
+        .bg-color-warning{
+            border: 1px solid #f4e700;
+            color: $secondColor;
+            background-color: #f4e700;
+            transition: all .4s;
+            &:hover{
+                background-color: $secondColor;
+                color: #f4e700;
+            }
+        }
+        .none-bg-warning{
+            border: 1px solid #f4e700;
+            color: #f4e700;
+            background-color: $secondColor;
+            transition: all .4s;
+            &:hover{
+                background-color: #f4e700;
+                color: $secondColor;
+            }
+        }
+        .bg-color-danger{
+            border: 1px solid #f44a40;
+            color: $secondColor;
+            background-color: #f44a40;
+            transition: all .4s;
+            &:hover{
+                background-color: $secondColor;
+                color: #f44a40;
+            }
+        }
+        .none-bg-danger{
+            border: 1px solid #f44a40;
+            color: #f44a40;
+            background-color: $secondColor;
+            transition: all .4s;
+            &:hover{
+                background-color: #f44a40;
+                color: $secondColor;
+            }
+        }
+        .link, .disable{
+            border: none;
+            background-color: #f9f9ff;
+        }
+        .link{
+            color: #415094;
+            transition: all .4s;
+            border: 1px solid #f9f9ff;
+            &:hover{
+                background-color: $secondColor;
+            }
+        }
+        .disable{
+            cursor: not-allowed;
+        }
+        .extra-large{
+            padding: 15px 40px;
+        }
+        .large{
+            padding: 12px 40px;
+        }
+        .default{
+            padding: 8px 30px;
+        }
+        .medium{
+            padding: 5px 30px;
+        }
+        .small{
+            padding: 1px 30px;
+        }
+    }
+}

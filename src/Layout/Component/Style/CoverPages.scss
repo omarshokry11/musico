@@ -1,0 +1,34 @@
+@import "../../../Style/__variable.scss";
+
+.main-cover-pages-container
+{
+    background-image: url("./img/cover-pages.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    height: 50vh;
+    color: $secondColor;
+    position: relative;
+    .background-cover{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, .75);
+    }
+    h1{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 60px;
+        font-weight: 400;
+        @media (max-width: 700px) {
+            font-size: 40px;
+        }
+        @media (max-width: 320px) {
+            font-size: 25px;
+        }
+    }
+}

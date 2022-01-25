@@ -1,0 +1,37 @@
+@import "../../../../Style/__variable.scss";
+
+.main-dropdown-list-container
+{
+    border-radius: 5px;
+    width: 95%;
+    margin: 0 auto;
+    position: absolute;
+    top: 65px;
+    right: 0;
+    left: 0;
+    background-color: #4c4c4c;
+    color: #FFFFFF;
+    padding: 0 25px;
+    z-index: 10;
+    @media (max-width: 700px) {
+        width: 97%;
+    }
+    @media (max-width: 320px) {
+        width: 100%;
+    }
+    li
+    {
+        margin: 10px 0;
+        a{
+            color: $secondColor;
+            display: block;
+            padding: 5px 10px;
+            transition: all .4s;
+            &:hover{
+                border-radius: 5px;
+                background-color: $secondColor;
+                color: $mainColor;
+            }
+        }
+    }
+}

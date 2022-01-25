@@ -1,0 +1,75 @@
+@import "../../../Style/__variable.scss";
+
+.main-image-galleries-container
+{
+    padding-bottom: 100px;
+    h1{
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 55px;
+        margin-bottom: 30px;
+        color: $mainColor;
+        text-align: center;
+        @media (max-width: 700px) {
+            font-size: 25px;
+        }
+    }
+    .item
+    {
+        margin: 20px 0;
+        position: relative;
+        &:hover .background-color{
+            display: block;
+        }
+        &:hover .icon{
+            display: block;
+        }
+        &:hover img{
+            transform: scale(1.05);
+        }
+        .background-color {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 1;
+            background-color: rgba(97, 92, 253, 0.4);
+            display: none;
+            transition: all .4s;
+            animation: animate .4s ease-in-out;
+        }
+        .icon {
+            cursor: pointer;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            color: $secondColor;
+            font-size: 40px;
+            display: none;
+            transition: all .4s;
+        }
+        .img
+        {
+            height: 350px;
+            width: 100%;
+            overflow: hidden;
+            img {
+                height: 100%;
+                width: 100%;
+                transition: all .4s;
+            }
+        }
+    }
+}
+
+@keyframes animate {
+    0%{
+        width: 50%;
+    }
+    100%{
+        width: 100%;
+    }
+}

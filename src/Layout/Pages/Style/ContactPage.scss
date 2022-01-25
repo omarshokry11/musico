@@ -1,0 +1,106 @@
+@import "../../../Style/__variable.scss";
+
+.main-contact-page-container
+{
+    .main-contact-page-content
+    {
+        padding: 100px 0 50px;
+        h4{
+            margin-bottom: 20px;
+            font-size: 20px;
+            font-weight: 500;
+        }
+        .contact-item
+        {
+            textarea{
+                width: 100%;
+                height: 200px;
+                max-height: 200px;
+                padding: 10px 15px;
+                border: 1px solid rgba(0, 0, 0, .1);
+                border-radius: 5px;
+                font-size: 15px;
+                outline: none;
+                color: rgba(0, 0, 0, .5);
+                &::placeholder{
+                    color: rgba(0, 0, 0, .4);
+                    font-size: 12px;
+                }
+            }
+            input{
+                display: inline-block;
+                width: 48%;
+                padding: 10px;
+                margin: 20px 5px;
+                border: 1px solid rgba(0, 0, 0, .1);
+                border-radius: 5px;
+                font-size: 15px;
+                outline: none;
+                color: rgba(0, 0, 0, .5);
+                &::placeholder{
+                    color: rgba(0, 0, 0, .5);
+                    font-size: 12px;
+                }
+                @media (max-width: 768px) {
+                    display: block;
+                    width: 100%;
+                    margin: 20px 0;
+                }
+            }
+            .subject{
+                display: block;
+                width: 100%;
+            }
+            button{
+                width: 25%;
+                text-align: center;
+                background: none;
+                padding: 12px 0;
+                border: 1px solid $thirdColor;
+                color: $thirdColor;
+                font-size: 15px;
+                font-weight: 500;
+                border-radius: 5px;
+                transition: all .4s;
+                @media (max-width: 768px) {
+                    margin-bottom: 25px;
+                }
+                &:hover{
+                    color: $secondColor;
+                    background-color: $thirdColor;
+                }
+            }
+        }
+        .items
+        {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+            .icon-item
+            {
+                width: 10%;
+                margin-right: 10px;
+                i{
+                    font-size: 27px;
+                    color: #8f9195;
+                }
+            }
+            .icon-details
+            {
+                width: 90%;
+                h4{
+                    margin-bottom: 10px;
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: #2a2a2a;
+                }
+                span{
+                    display: block;
+                    font-size: 14px;
+                    color: #8a8a8a;
+                }
+            }
+        }
+    }
+}

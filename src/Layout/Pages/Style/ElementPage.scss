@@ -1,0 +1,30 @@
+@import "../../../Style/__variable.scss";
+
+.main-element-page-container
+{
+    .main-element-page-content
+    {
+        padding: 100px 0 50px;
+        .item
+        {
+            padding-bottom: 70px;
+            h3{
+                color: $mainColor;
+                font-size: 22px;
+                font-weight: 400;
+                margin-bottom: 30px;
+            }
+            p
+            {
+                color: #727272;
+                font-size: 17px;
+                font-weight: 300;
+                line-height: 28px;
+                margin-bottom: 13px;
+                strong, sup, sub, u, del{
+                    color: #ff5e13;
+                }
+            }
+        }
+    }
+}

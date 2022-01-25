@@ -1,0 +1,31 @@
+@import "../../../Style/__variable.scss";
+
+.main-contact-item-container
+{
+    background-image: url("./img/contact.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 170px 0;
+    color: $secondColor;
+    text-align: center;
+    h3{
+        font-size: 50px;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+    button{
+        font-size: 16px;
+        font-weight: 500;
+        padding: 12px 42px;
+        border: 1px solid $thirdColor;
+        background-color: $thirdColor;
+        color: $secondColor;
+        border-radius: 5px;
+        transition: all .4s;
+        &:hover{
+            background-color: rgba(255, 255, 255, 0);
+            color: $thirdColor;
+        }
+    }
+}

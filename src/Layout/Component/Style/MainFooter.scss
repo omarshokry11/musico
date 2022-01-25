@@ -1,0 +1,131 @@
+@import "../../../Style/__variable.scss";
+
+.main-footer-container
+{
+    background-color: $mainColor;
+    .footer-top
+    {
+        padding: 100px 0;
+        color: $secondColor;
+        @media (max-width: 700px) {
+            padding-bottom: 50px;
+        }
+        h3{
+            font-size: 22px;
+            font-weight: 400;
+            color: $secondColor;
+            margin-bottom: 40px;
+        }
+        input{
+            width: 70%;
+            color: $secondColor;
+            font-size: 15px;
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid #334A60;
+            padding: 15px;
+            &:focus{
+                border: navajowhite;
+            }
+            @media (max-width: 768px) {
+                display: block;
+                width: 100%;
+            }
+        }
+        button{
+            width: 28%;
+            color: $secondColor;
+            background-color: #615CFD;
+            padding: 12px 40px;
+            border: none;
+            font-size: 15px;
+            margin-left: 10px;
+            border-radius: 5px;
+            @media (max-width: 768px) {
+                display: block;
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+        p{
+            margin: 20px 0;
+        }
+        span{
+            display: block;
+            margin-bottom: 10px;
+            color: #C7C7C7;
+            font-size: 12px;
+            font-weight: 500;
+        }
+        .icon
+        {
+            margin-top: 50px;
+            i{
+                display: inline-block;
+                margin-right: 15px;
+                border-radius: 50%;
+                width: 35px;
+                height: 35px;
+                line-height: 35px;
+                text-align: center;
+                color: #C7C7C7;
+                cursor: pointer;
+                transition: all .4s;
+                &:hover{
+                    color: $secondColor;
+                }
+            }
+            .fa-facebook-f{
+                background-color: #3B5797;
+            }
+            .fa-google-plus-g{
+                background-color: #DB4337;
+            }
+            .fa-twitter{
+                background-color: #00ACED;
+            }
+            .fa-youtube{
+                background-color: #BB0000;
+            }
+            .fa-instagram{
+                background-color: #AC907A;
+            }
+        }
+    }
+    .footer-bottom{
+        padding: 30px 0;
+        p
+        {
+            color: #C7C7C7;
+            margin: 0;
+            font-size: 13px;
+            font-weight: 400;
+            span{
+                color: $thirdColor;
+            }
+            i{
+                font-size: 13px;
+                margin: 0 2px;
+            }
+            @media (max-width: 700px) {
+                margin-bottom: 25px;
+                font-size: 10px;
+            }
+        }
+        a{
+            padding: 0 25px;
+            color: #808E9C;
+            font-size: 13px;
+            font-weight: 600;
+            transition: all .4s;
+            &:hover{
+                color: $secondColor;
+            }
+            @media (max-width: 768px) {
+                display: inline-block;
+                width: 33.33%;
+                margin: 15px 0;
+            }
+        }
+    }
+}

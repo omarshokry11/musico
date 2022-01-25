@@ -1,0 +1,76 @@
+@import "../../../Style/__variable.scss";
+
+.main-nav-bar-container
+{
+    position: fixed;
+    width: 100%;
+    padding: 20px 150px;
+    background-color: $mainColor;
+    box-shadow: 0 3px 16px 0 rgba(0, 0, 0, .10);
+    z-index: 1000;
+    @media (max-width: 768px) {
+        padding: 20px;
+    }
+    @media (max-width: 320px) {
+        padding: 20px 0;
+    }
+    img{
+        width: 125px;
+    }
+    .link-list
+    {
+        li
+        {
+            display: inline-block;
+            padding: 0 10px;
+            a{
+                color: $secondColor;
+                font-size: 14px;
+                transition: all .5s;
+                &:hover{
+                    color: $thirdColor;
+                }
+            }
+        }
+    }
+    .icon
+    {
+        margin: 0;
+        text-align: right;
+        i{
+            display: inline-block;
+            margin: 0 10px;
+            color: $secondColor;
+            border-radius: 50%;
+            border: 1px solid #41393a;
+            font-size: 14px;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            cursor: pointer;
+            transition: all .5s;
+            &:hover{
+                color: $thirdColor;
+            }
+        }
+    }
+    .dropdown-list
+    {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translate(-10px, -50%);
+        cursor: pointer;
+        @media (max-width: 320px) {
+            right: 0;
+        }
+        div{
+            display: block;
+            width: 25px;
+            height: 3px;
+            background-color: #FFFFFF;
+            margin: 4px 0;
+        }
+    }
+}

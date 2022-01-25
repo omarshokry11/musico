@@ -1,0 +1,51 @@
+@import "../../../../Style/__variable.scss";
+
+.main-definition-elements-container
+{
+    padding: 25px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    h3{
+        color: $mainColor;
+        font-size: 25px;
+        font-weight: 400;
+        margin-bottom: 30px;
+    }
+    .definition-item
+    {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid rgba(0, 0, 0, .1);
+        .item
+        {
+            flex: .3;
+            h5{
+                font-size: 18px;
+                font-weight: 400;
+                margin-bottom: 20px;
+                line-height: 1.2em;
+                color: rgb(0, 28, 56);
+            }
+            p{
+                color: rgb(114, 114, 114);
+                font-size: 16px;
+                font-weight: 300;
+                line-height:  28px;
+                margin-bottom: 13px;
+            }
+        }
+    }
+    .block-quotes-item
+    {
+        padding: 50px 0 25px;
+        p{
+            background-color: #f9f9ff;
+            padding: 30px 50px 30px 30px;
+            border-left: 2px solid #ff5e13;
+            line-height: 28px;
+            font-size: 15px;
+            font-weight: 400;
+            color: $mainColor;
+            margin: 0;
+        }
+    }
+}

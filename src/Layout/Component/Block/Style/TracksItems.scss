@@ -1,0 +1,100 @@
+@import "../../../../Style/__variable.scss";
+
+.main-tracks-items-container
+{
+    padding: 100px 0;
+    h1{
+        font-size: 45px;
+        font-weight: 400;
+        line-height: 55px;
+        color: $mainColor;
+        margin-bottom: 70px;
+    }
+    .item
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 25px;
+        @media (max-width: 768px) {
+            display: block;
+        }
+        .img
+        {
+            flex: .14;
+            @media (max-width: 900px) {
+                width: 20%;
+                display: inline-block;
+                margin-bottom: 20px;
+            }
+            @media (max-width: 700px) {
+                width: 35%;
+            }
+            img{
+                width: 100%;
+            }
+        }
+        .track-details
+        {
+            flex: .6;
+            @media (max-width: 900px) {
+                text-align: center;
+                width: 50%;
+                display: inline-block;
+            }
+            @media (max-width: 700px) {
+                width: 65%;
+            }
+            h4{
+                font-size: 30px;
+                font-weight: 600;
+                color: $mainColor;
+                margin-bottom: 0;
+                @media (max-width: 700px) {
+                    font-size: 20px;
+                }
+            }
+            p{
+                font-size: 14px;
+                font-weight: 400;
+                color: #808080;
+                margin-bottom: 10px;
+            }
+            span{
+                font-size: 15px;
+                font-weight: 500;
+                color: $mainColor;
+                letter-spacing: 1px;
+            }
+        }
+        .button
+        {
+            flex: .2;
+            @media (max-width: 900px) {
+                width: 30%;
+                display: inline-block;
+                margin-top: 20px;
+            }
+            @media (max-width: 700px) {
+                display: block;
+                width: 100%;
+            }
+            button{
+                background: none;
+                color: #ED1B1B;
+                border: 1px solid #ED1B1B;
+                font-size: 16px;
+                font-weight: 600;
+                display: inline-block;
+                padding: 12px 42px;
+                cursor: pointer;
+                border-radius: 5px;
+                transition: all .4s;
+                &:hover{
+                    background-color: #ed1b1b;
+                    color: $secondColor;
+                }
+            }
+        }
+    }
+}

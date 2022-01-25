@@ -1,0 +1,58 @@
+@import "./__variable.scss";
+
+.main-app-content
+{
+    @media (max-width: 1024px) {
+        padding-bottom: 650px;
+    }
+    @media (max-width: 768px) {
+        padding-bottom: 160px;
+    }
+    @media (max-width: 700px) {
+        padding-bottom: 0;
+    }
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    &:hover{
+        text-decoration: none;
+    }
+}
+
+.cover-about
+{
+    padding: 100px 0;
+    position: relative;
+    .icon
+    {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+        border-radius: 50%;
+        height: 80px;
+        width: 80px;
+        line-height: 80px;
+        text-align: center;
+        background-color: $thirdColor;
+        @media (max-width: 700px) {
+            height: 55px;
+            width: 55px;
+            line-height: 55px;
+        }
+        i{
+            font-size: 20px;
+            color: $secondColor;
+        }
+    }
+    img{
+        width: 100%;
+    }
+}

@@ -1,0 +1,70 @@
+@import "../../../Style/__variable.scss";
+
+.main-track-items-container
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    @media (max-width: 768px) {
+        display: block;
+    }
+    .item
+    {
+        position: relative;
+        flex: .248;
+        justify-content: space-between;
+        transition: all .4s;
+        &:hover{
+            filter: grayscale(20%);
+        }
+        &:hover .icon{
+            display: block;
+        }
+        &:hover .details-track{
+            display: block;
+        }
+        @media (max-width: 768px) {
+            width: 50%;
+            display: inline-block;
+        }
+        @media (max-width: 700px) {
+            width: 100%;
+            display: block;
+            margin-bottom: 15px;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        .icon
+        {
+            position: absolute;
+            top: 50%;
+            left: 47%;
+            transform: translate(-47%, -50%);
+            display: none;
+            i{
+                font-size: 50px;
+                color: $thirdColor;
+            }
+        }
+        .details-track
+        {
+            position: absolute;
+            left: 30px;
+            bottom: 30px;
+            color: $secondColor;
+            transition: all .4s;
+            display: none;
+            span{
+                display: block;
+                margin-bottom: 5px;
+                color: $thirdColor;
+            }
+            h4{
+                font-size: 22px;
+                font-weight: 600;
+            }
+        }
+    }
+}

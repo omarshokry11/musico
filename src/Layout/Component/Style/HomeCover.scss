@@ -1,0 +1,128 @@
+@import "../../../Style/__variable.scss";
+
+.main-home-cover-container
+{
+    background-image: url("./img/cover.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 97vh;
+    color: $secondColor;
+    position: relative;
+    @media (max-width: 1024px) {
+        height: 55vh;
+    }
+    @media (max-width: 768px) {
+        height: 75vh;
+    }
+    @media (max-width: 700px) {
+        height: 95vh;
+    }
+    h1{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 85px;
+        font-weight: 600;
+        @media (max-width: 700px) {
+            font-size: 60px;
+        }
+        @media (max-width: 320px) {
+            font-size: 45px;
+        }
+    }
+    .items
+    {
+        position: relative;
+        height: 100%;
+        .item
+        {
+            position: absolute;
+            bottom: 0;
+            left: 25%;
+            display: flex;
+            justify-content: space-between;
+            width: 50%;
+            @media (max-width: 700px) {
+                left: 10px;
+                display: block;
+            }
+            @media (max-width: 700px) {
+                left: 5px;
+            }
+            .img
+            {
+                flex: .15;
+                img{
+                    width: 100%;
+                }
+                @media (max-width: 700px) {
+                    flex: 1;
+                    margin-bottom: 10px;
+                }
+            }
+            .details
+            {
+                flex: .83;
+                @media (max-width: 700px) {
+                    flex: 1;
+                }
+                h2{
+                    font-size: 22px;
+                    margin: 0;
+                }
+                p{
+                    margin: 10px 0;
+                    font-size: 14px;
+                    color: #808080;
+                    @media (max-width: 700px) {
+                        margin: 5px 0;
+                    }
+                }
+                span{
+                    display: block;
+                    color: #022342;
+                    font-size: 14px;
+                    @media (max-width: 700px) {
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+        .buttons
+        {
+            position: absolute;
+            bottom: 50px;
+            right: 25%;
+            z-index: 10;
+            @media (max-width: 700px) {
+                right: 10px;
+                bottom: 100px;
+            }
+            @media (max-width: 700px) {
+                right: 5px;
+            }
+            button{
+                display: block;
+                background: none;
+                color: #ed1b1b;
+                border: 1px solid #ed1b1b;
+                padding: 10px 30px;
+                font-size: 17px;
+                font-weight: 500;
+                transition: all .4s;
+                &:hover{
+                    background-color: #ed1b1b;
+                    color: $secondColor;
+                }
+                @media (max-width: 700px) {
+                    padding: 10px 20px;
+                }
+                @media (max-width: 320px) {
+                    padding: 10px;
+                }
+            }
+        }
+    }
+}
